@@ -1,0 +1,23 @@
+
+h1{
+display: flex;
+    justify-content: center;
+
+}
+.color{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+
+}
+.activity{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
