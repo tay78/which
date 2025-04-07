@@ -10,6 +10,7 @@ let score3 = 0;
 let score4 = 0;
 let score5 = 0;
 activity.style.display="none";
+character.style.display="none";
 trait.style.display ="none";
     activity.addEventListener("click", function(){
 //activity = activity.value;
@@ -89,6 +90,9 @@ trait.style.display ="none";
               score5=score5+1;
           
           }
+          trait.style.display="none";
+          character.style.display="block";
+
           console.log(score1);
 console.log(score2);
 console.log(score3);
@@ -97,10 +101,12 @@ console.log(score5);
           });
 
     character.addEventListener("keydown", function(){
-        color.style.display ="none";
-        trait.style.display ="none";
-      activity.style.display="none";
+       
         if(event.keyCode == 13){
+            character.style.display="block";
+            color.style.display ="none";
+            trait.style.display ="none";
+          activity.style.display="none";
 if(score1>= score2 && score1>= score3 && score1>= score4 && score1>= score5){
 
 text.innerHTML = "percy";
