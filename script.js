@@ -21,50 +21,59 @@ color.style.display = "none";
 character.style.display = "none";
 trait.style.display = "none";
 
-activity.addEventListener('click', function () {
+activity.addEventListener('keydown', function () {
     //activity = activity.value;
+    if (event.keyCode == 13) {
     trait.style.display = "none";
     color.style.display = "block";
     activity.style.display = "none";
-    if (buttons === answer1) {
+   
+        let answer = document.querySelector("input").value;
+
+    if (answer === "water related") {
         score1 = score1 + 1;
     }
-    else if (buttons === answer2) {
+    else if (answer === "card games") {
         score2 = score2 + 1;
         
-    } else if (buttons === answer3) {
+    } else if (answer === "sports") {
         score3 = score3 + 1;
 
-    } else if (buttons === answer4) {
+    } else if (answer === "reading") {
         score4 = score4 + 1;
 
     } else {
         score5 = score5 + 1;
 
     }
+}
     color.style.display = "block";
     console.log(score1);
     console.log(score2);
     console.log(score3);
     console.log(score4);
     console.log(score5);
+
 });
 
-color.addEventListener('click', function () {
+color.addEventListener('keydown', function () {
     //  activity = activity.value;
+    if (event.keyCode == 13) {
+
     color.style.display = "none";
     activity.style.display = "none";
     trait.style.display = "block";
-    if (buttons === answer1) {
+        let answer = document.querySelector("input").value;
+    if (answer === "blue") {
         score1 = score1 + 1;
     }
-    else if (buttons === answer2) {
+    else if (answer === "black") {
         score2 = score2 + 1;
         
-    } else if (buttons === answer3) {
+    } else if (answer === "green") {
         score3 = score3 + 1;
 
-    } else if (buttons === answer4) {
+    } else if (answer === "pink") {
         score4 = score4 + 1;
 
     } else {
@@ -72,12 +81,12 @@ color.addEventListener('click', function () {
 
     }
 
-
     console.log(score1);
     console.log(score2);
     console.log(score3);
     console.log(score4);
     console.log(score5);
+}
 });
 trait.addEventListener('keydown', function () {
     //  activity = activity.value;
