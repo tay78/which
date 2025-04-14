@@ -6,10 +6,10 @@ let buttons = document.querySelector(".buttons");
 let text = document.querySelector("h4");
 //let input = document.querySelector(".answer");
 
-let answer1 = document.querySelector('.answer1');
-let answer2 = document.querySelector('.answer2');
-let answer3 = document.querySelector('.answer3');
-let answer4 = document.querySelector('.answer4');
+//let answer1 = document.querySelector('.answer1');
+//let answer2 = document.querySelector('.answer2');
+//let answer3 = document.querySelector('.answer3');
+//let answer4 = document.querySelector('.answer4');
 //let answer = input.value;
 let score1 = 0;
 let score2 = 0;
@@ -28,32 +28,33 @@ activity.addEventListener('keydown', function () {
     color.style.display = "block";
     activity.style.display = "none";
    
-        let answer = document.querySelector("input").value;
+        let answer1 = document.querySelector(".answer1").value;
 
-    if (answer === "water related") {
+    if (answer1 === "water related") {
         score1 = score1 + 1;
     }
-    else if (answer === "card games") {
+    else if (answer1 === "card games") {
         score2 = score2 + 1;
         
-    } else if (answer === "sports") {
+    } else if (answer1 === "sports") {
         score3 = score3 + 1;
 
-    } else if (answer === "reading") {
+    } else if (answer1 === "reading") {
         score4 = score4 + 1;
 
     } else {
         score5 = score5 + 1;
 
     }
-}
+
     color.style.display = "block";
+    console.log(answer1);
     console.log(score1);
     console.log(score2);
     console.log(score3);
     console.log(score4);
     console.log(score5);
-
+}
 });
 
 color.addEventListener('keydown', function () {
@@ -63,24 +64,24 @@ color.addEventListener('keydown', function () {
     color.style.display = "none";
     activity.style.display = "none";
     trait.style.display = "block";
-        let answer = document.querySelector("input").value;
-    if (answer === "blue") {
+        let answer2 = document.querySelector(".answer2").value;
+    if (answer2 === "blue") {
         score1 = score1 + 1;
     }
-    else if (answer === "black") {
+    else if (answer2 === "black") {
         score2 = score2 + 1;
         
-    } else if (answer === "green") {
+    } else if (answer2 === "green") {
         score3 = score3 + 1;
 
-    } else if (answer === "pink") {
+    } else if (answer2 === "pink") {
         score4 = score4 + 1;
 
     } else {
         score5 = score5 + 1;
 
     }
-
+    console.log(answer2);
     console.log(score1);
     console.log(score2);
     console.log(score3);
@@ -92,24 +93,24 @@ trait.addEventListener('keydown', function () {
     //  activity = activity.value;
     trait.style.display = "block";
     if (event.keyCode == 13) {
-        let answer = document.querySelector("input").value;
-        if (answer === "knowledge") {
-            score1 = score1 + 1;
+        let answer3 = document.querySelector(".answer3").value;
+        if (answer3 === "knowledge") {
+            score4 = score4 + 1;
         }
-        else if (answer === "humor") {
-            score2 = score2 + 1;
+        else if (answer3 === "humor") {
+            score1 = score1 + 1;
     
-        } else if (answer === "resourcefulness") {
+        } else if (answer3 === "resourcefulness") {
             score3 = score3 + 1;
     
-        } else if (answer === "looks") {
-            score4 = score4 + 1;
+        } else if (answer3 === "looks") {
+            score2 = score2 + 1;
     
         } else {
             score5 = score5 + 1;
     
         }
-        console.log(answer);
+        console.log(answer3);
         console.log(score1);
         console.log(score2);
         console.log(score3);
@@ -122,25 +123,25 @@ trait.addEventListener('keydown', function () {
 
        if (score1 >= score2 && score1 >= score3 && score1 >= score4 && score1 >= score5) {
 
-            text.innerHTML = "percy";
+            text.innerHTML = "You are Percy";
         }
         if (score2 >= score1 && score2 >= score3 && score2 >= score4 && score2 >= score5) {
 
-            text.innerHTML = "nico";
+            text.innerHTML = "You are Nico";
 
 
         } if (score3 >= score2 && score3 >= score1 && score3 >= score4 && score3 >= score5) {
 
-           text.innerHTML = "grover";
+           text.innerHTML = "You are Grover";
 
 
        } if (score4 >= score2 && score4 >= score3 && score4 >= score1 && score4 >= score5) {
 
-            text.innerHTML = "annabeth";
+            text.innerHTML = "You are Annabeth";
 
        } if (score5 >= score2 && score5 >= score3 && score5 >= score4 && score5 >= score1) {
 
-            text.innerHTML = "luke";
+            text.innerHTML = "You are Luke";
 
        }
 }
