@@ -2,6 +2,8 @@ let color = document.querySelector('.color');
 let character = document.querySelector('.character');
 let activity = document.querySelector('.activity');
 let trait = document.querySelector(".trait");
+let music = document.querySelector(".music");
+let weapon = document.querySelector(".weapon");
 let buttons = document.querySelector(".buttons");
 let text = document.querySelector("h4");
 let percy = document.querySelector('.percy');
@@ -9,6 +11,12 @@ let grover = document.querySelector('.grover');
 let annabeth = document.querySelector(".annabeth");
 let luke = document.querySelector(".luke");
 let nico = document.querySelector(".nico");
+let b1 = document.querySelector(".b1");
+let b2 = document.querySelector(".b2");
+let b3 = document.querySelector(".b3");
+let b4 = document.querySelector(".b4");
+let b5 = document.querySelector(".b5");
+
 //let input = document.querySelector(".answer");
 
 //let answer1 = document.querySelector('.answer1');
@@ -25,10 +33,12 @@ activity.style.display = "block";
 color.style.display = "none";
 character.style.display = "none";
 trait.style.display = "none";
+music.style.display = "none";
+weapon.style.display = "none";
 
-activity.addEventListener('keydown', function () {
+b1.addEventListener('click', function () {
     //activity = activity.value;
-    if (event.keyCode == 13) {
+   // if (event.keyCode == 13) {
     trait.style.display = "none";
     color.style.display = "block";
     activity.style.display = "none";
@@ -59,16 +69,16 @@ activity.addEventListener('keydown', function () {
     console.log(score3);
     console.log(score4);
     console.log(score5);
-}
+//}
 });
 
-color.addEventListener('keydown', function () {
+b2.addEventListener('click', function () {
     //  activity = activity.value;
-    if (event.keyCode == 13) {
+  //  if (event.keyCode == 13) {
 
     color.style.display = "none";
     activity.style.display = "none";
-    trait.style.display = "block";
+    music.style.display = "block";
         let answer2 = document.querySelector(".answer2").value;
     if (answer2 === "blue") {
         score1 = score1 + 1;
@@ -92,30 +102,98 @@ color.addEventListener('keydown', function () {
     console.log(score3);
     console.log(score4);
     console.log(score5);
-}
+//}
 });
-trait.addEventListener('keydown', function () {
+b3.addEventListener('click', function () {
     //  activity = activity.value;
-    trait.style.display = "block";
-    if (event.keyCode == 13) {
+    //if (event.keyCode == 13) {
+        music.style.display = "none";
+
+    color.style.display = "none";
+    activity.style.display = "none";
+    weapon.style.display = "block";
         let answer3 = document.querySelector(".answer3").value;
-        if (answer3 === "knowledge") {
+    if (answer3 === "rock") {
+        score1 = score1 + 1;
+    }
+    else if (answer3 === "metal") {
+        score2 = score2 + 1;
+        
+    } else if (answer3 === "pop") {
+        score3 = score3 + 1;
+
+    } else if (answer3 === "r and b") {
+        score4 = score4 + 1;
+
+    } else {
+        score5 = score5 + 1;
+
+    }
+    console.log(answer3);
+    console.log(score1);
+    console.log(score2);
+    console.log(score3);
+    console.log(score4);
+    console.log(score5);
+//}
+});
+b4.addEventListener('click', function () {
+    //  activity = activity.value;
+    //if (event.keyCode == 13) {
+        weapon.style.display = "none";
+
+    color.style.display = "none";
+    activity.style.display = "none";
+    trait.style.display = "block";
+        let answer4 = document.querySelector(".answer4").value;
+    if (answer4 === "pen") {
+        score1 = score1 + 1;
+    }
+    else if (answer4 === "mcdonalds") {
+        score2 = score2 + 1;
+        
+    } else if (answer4 === "baseball bat") {
+        score3 = score3 + 1;
+
+    } else if (answer4 === "hat") {
+        score4 = score4 + 1;
+
+    } else {
+        score5 = score5 + 1;
+
+    }
+    console.log(answer4);
+    console.log(score1);
+    console.log(score2);
+    console.log(score3);
+    console.log(score4);
+    console.log(score5);
+//}
+});
+b5.addEventListener('click', function () {
+    //  activity = activity.value;
+    music.style.display = "none";
+
+    trait.style.display = "block";
+ //   if (event.keyCode == 13) {
+        let answer5 = document.querySelector(".answer5").value;
+        if (answer5 === "knowledge") {
             score4 = score4 + 1;
         }
-        else if (answer3 === "humor") {
+        else if (answer5 === "humor") {
             score1 = score1 + 1;
     
-        } else if (answer3 === "resourcefulness") {
+        } else if (answer5 === "resourcefulness") {
             score3 = score3 + 1;
     
-        } else if (answer3 === "looks") {
+        } else if (answer5 === "looks") {
             score2 = score2 + 1;
     
         } else {
             score5 = score5 + 1;
     
         }
-        console.log(answer3);
+        console.log(answer5);
         console.log(score1);
         console.log(score2);
         console.log(score3);
@@ -169,6 +247,6 @@ trait.addEventListener('keydown', function () {
             text.innerHTML = "You are Luke";
 
        }
-}
+//}
 });
 
