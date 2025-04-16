@@ -7,6 +7,10 @@ color: gold;
     justify-content: center;
 
 }
+img{
+width: 100%;
+
+}
 .image{
 display:flex;
 justify-content: center;

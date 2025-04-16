@@ -4,6 +4,11 @@ let activity = document.querySelector('.activity');
 let trait = document.querySelector(".trait");
 let buttons = document.querySelector(".buttons");
 let text = document.querySelector("h4");
+let percy = document.querySelector('.percy');
+let grover = document.querySelector('.grover');
+let annabeth = document.querySelector(".annabeth");
+let luke = document.querySelector(".luke");
+let nico = document.querySelector(".nico");
 //let input = document.querySelector(".answer");
 
 //let answer1 = document.querySelector('.answer1');
@@ -122,25 +127,45 @@ trait.addEventListener('keydown', function () {
     trait.style.display = "none";
 
        if (score1 >= score2 && score1 >= score3 && score1 >= score4 && score1 >= score5) {
-
+        percy.style.display = "block";
+        nico.style.display = "none";
+        annabeth.style.display = "none";
+        grover.style.display = "none";
+        luke.style.display = "none";
             text.innerHTML = "You are Percy";
         }
         if (score2 >= score1 && score2 >= score3 && score2 >= score4 && score2 >= score5) {
-
+            nico.style.display = "block";
+            percy.style.display = "none";
+            annabeth.style.display = "none";
+            grover.style.display = "none";
+            luke.style.display = "none";
             text.innerHTML = "You are Nico";
 
 
         } if (score3 >= score2 && score3 >= score1 && score3 >= score4 && score3 >= score5) {
-
+            grover.style.display = "block";
+            percy.style.display = "none";
+            nico.style.display = "none";
+            annabeth.style.display = "none";
+            luke.style.display = "none";
            text.innerHTML = "You are Grover";
 
 
        } if (score4 >= score2 && score4 >= score3 && score4 >= score1 && score4 >= score5) {
-
+        annabeth.style.display = "block";
+        percy.style.display = "none";
+        nico.style.display = "none";
+        grover.style.display = "none";
+        luke.style.display = "none";
             text.innerHTML = "You are Annabeth";
 
        } if (score5 >= score2 && score5 >= score3 && score5 >= score4 && score5 >= score1) {
-
+        luke.style.display = "block";
+        percy.style.display = "none";
+        nico.style.display = "none";
+        annabeth.style.display = "none";
+        grover.style.display = "none";
             text.innerHTML = "You are Luke";
 
        }
