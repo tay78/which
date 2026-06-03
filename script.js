@@ -45,16 +45,16 @@ b1.addEventListener('click', function () {
    
         let answer1 = document.querySelector(".answer1").value;
 
-    if (answer1 === "water related") {
+    if (answer1 === "red") {
         score1 = score1 + 1;
     }
-    else if (answer1 === "card games") {
+    else if (answer1 === "blue") {
         score2 = score2 + 1;
         
-    } else if (answer1 === "sports") {
+    } else if (answer1 === "yellow") {
         score3 = score3 + 1;
 
-    } else if (answer1 === "reading") {
+    } else if (answer1 === "green") {
         score4 = score4 + 1;
 
     } else {
@@ -70,6 +70,7 @@ b1.addEventListener('click', function () {
     console.log(score4);
     console.log(score5);
 //}
+
 });
 
 b2.addEventListener('click', function () {
@@ -80,16 +81,16 @@ b2.addEventListener('click', function () {
     activity.style.display = "none";
     music.style.display = "block";
         let answer2 = document.querySelector(".answer2").value;
-    if (answer2 === "blue") {
+    if (answer2 === "grain") {
         score1 = score1 + 1;
     }
-    else if (answer2 === "black") {
+    else if (answer2 === "fruit") {
         score2 = score2 + 1;
         
-    } else if (answer2 === "green") {
+    } else if (answer2 === "vegetable") {
         score3 = score3 + 1;
 
-    } else if (answer2 === "pink") {
+    } else if (answer2 === "meat") {
         score4 = score4 + 1;
 
     } else {
@@ -146,16 +147,16 @@ b4.addEventListener('click', function () {
     activity.style.display = "none";
     trait.style.display = "block";
         let answer4 = document.querySelector(".answer4").value;
-    if (answer4 === "pen") {
+    if (answer4 === "supersmell") {
         score1 = score1 + 1;
     }
-    else if (answer4 === "mcdonalds") {
+    else if (answer4 === "supersight") {
         score2 = score2 + 1;
         
-    } else if (answer4 === "baseball bat") {
+    } else if (answer4 === "built in weapons") {
         score3 = score3 + 1;
 
-    } else if (answer4 === "hat") {
+    } else if (answer4 === "breathing underwater") {
         score4 = score4 + 1;
 
     } else {
@@ -177,16 +178,16 @@ b5.addEventListener('click', function () {
     trait.style.display = "block";
  //   if (event.keyCode == 13) {
         let answer5 = document.querySelector(".answer5").value;
-        if (answer5 === "knowledge") {
+        if (answer5 === "versatility") {
             score4 = score4 + 1;
         }
-        else if (answer5 === "humor") {
+        else if (answer5 === "speed") {
             score1 = score1 + 1;
     
         } else if (answer5 === "resourcefulness") {
             score3 = score3 + 1;
     
-        } else if (answer5 === "looks") {
+        } else if (answer5 === "strength") {
             score2 = score2 + 1;
     
         } else {
@@ -210,7 +211,7 @@ b5.addEventListener('click', function () {
         annabeth.style.display = "none";
         grover.style.display = "none";
         luke.style.display = "none";
-            text.innerHTML = "You are Percy";
+            text.innerHTML = "You are Pterodactyl because all roads lead to pterodactyl";
         }
         if (score2 >= score1 && score2 >= score3 && score2 >= score4 && score2 >= score5) {
             nico.style.display = "block";
@@ -218,7 +219,7 @@ b5.addEventListener('click', function () {
             annabeth.style.display = "none";
             grover.style.display = "none";
             luke.style.display = "none";
-            text.innerHTML = "You are Nico";
+            text.innerHTML = "You are Pterodactyl because all roads lead to pterodactyl";
 
 
         } if (score3 >= score2 && score3 >= score1 && score3 >= score4 && score3 >= score5) {
@@ -227,7 +228,7 @@ b5.addEventListener('click', function () {
             nico.style.display = "none";
             annabeth.style.display = "none";
             luke.style.display = "none";
-           text.innerHTML = "You are Grover";
+           text.innerHTML = "You are Pterodactyl because all roads lead to pterodactyl";
 
 
        } if (score4 >= score2 && score4 >= score3 && score4 >= score1 && score4 >= score5) {
@@ -236,7 +237,7 @@ b5.addEventListener('click', function () {
         nico.style.display = "none";
         grover.style.display = "none";
         luke.style.display = "none";
-            text.innerHTML = "You are Annabeth";
+            text.innerHTML = "You are Pterodactyl because all roads lead to pterodactyl";
 
        } if (score5 >= score2 && score5 >= score3 && score5 >= score4 && score5 >= score1) {
         luke.style.display = "block";
@@ -244,7 +245,7 @@ b5.addEventListener('click', function () {
         nico.style.display = "none";
         annabeth.style.display = "none";
         grover.style.display = "none";
-            text.innerHTML = "You are Luke";
+            text.innerHTML = "You are Pterodactyl because all roads lead to pterodactyl";
 
        }
 //}
